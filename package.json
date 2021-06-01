@@ -1,0 +1,24 @@
+{
+  "name": "insomnia-plugin-res2ts",
+  "version": "1.0.1",
+  "description": "Transform response to TypeScript types",
+  "author": "Antistatique",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "json-ts": "^1.6.4"
+  },
+  "insomnia": {
+    "name": "res2ts",
+    "displayName": "Response to Typescript",
+    "description": "Transform response to TypeScript types",
+    "publisher": {
+      "name": "Antistatique"
+    },
+    "applications": {
+      "designer": "*",
+      "core": "*",
+      "cli": "*"
+    }
+  }
+}
