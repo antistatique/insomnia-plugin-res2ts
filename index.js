@@ -6,7 +6,6 @@ module.exports.requestActions = [
     label: 'Generate TypeScript Types',
     action: async (context, data) => {
       const { request } = data;
-      console.log('request', request);
       const response = await context.network.sendRequest(request);
       const body = fs.readFileSync(response.bodyPath);
       const interfaces = json2ts(body, { prefix: '', rootName: 'RootObject' });
